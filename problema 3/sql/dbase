@@ -1,0 +1,83 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.9
+-- Dumped by pg_dump version 12.9
+
+-- Started on 2022-02-24 23:30:33
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+DROP DATABASE examen;
+--
+-- TOC entry 2825 (class 1262 OID 16447)
+-- Name: examen; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+CREATE DATABASE examen WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'Spanish_Belize.1252' LC_CTYPE = 'Spanish_Belize.1252';
+
+
+ALTER DATABASE examen OWNER TO postgres;
+
+\connect examen
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 203 (class 1259 OID 16451)
+-- Name: tres; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.tres (
+    numero character varying(50),
+    centenas character varying(50),
+    decenas character varying(50),
+    unidades character varying(50)
+);
+
+
+ALTER TABLE public.tres OWNER TO postgres;
+
+--
+-- TOC entry 2819 (class 0 OID 16451)
+-- Dependencies: 203
+-- Data for Name: tres; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.tres (numero, centenas, decenas, unidades) VALUES ('100', '1', '0', '0');
+INSERT INTO public.tres (numero, centenas, decenas, unidades) VALUES ('100', '1', '0', '0');
+INSERT INTO public.tres (numero, centenas, decenas, unidades) VALUES ('99', '0', '9', '9');
+INSERT INTO public.tres (numero, centenas, decenas, unidades) VALUES ('50', '0', '5', '0');
+INSERT INTO public.tres (numero, centenas, decenas, unidades) VALUES ('185', '1', '8', '5');
+INSERT INTO public.tres (numero, centenas, decenas, unidades) VALUES ('999', '9', '9', '9');
+
+
+-- Completed on 2022-02-24 23:30:33
+
+--
+-- PostgreSQL database dump complete
+--
+
